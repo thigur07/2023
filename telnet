@@ -1,0 +1,11 @@
+Telnet
+$ apt show telnetd
+$ sudo apt install telnetd -y
+$ sudo systemctl status inetd
+sudo ufw status
+$ sudo ufw enable
+$ sudo ufw allow 23
+sudo ufw status
+$ telnet 192.168.1.25
+$ exit
+$ sudo apt purge telnetd -y
