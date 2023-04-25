@@ -1,0 +1,48 @@
+Apache2
+$ sudo apt upgrade
+$  sudo apt update
+	To install Apache2 web server. For this, execute the below command in Terminal:
+$ sudo apt install apache2
+or
+$sudo apt install -y apache2 apache2-utils
+$ apache2 -version
+sudo systemctl status apache2
+sudo systemctl enable apache2
+$ sudo ufw app list$ sudo ufw allow ‘Apache’$ sudo ufw status
+sudo ufw allow in “Apache Full”
+	$ sudo systemctl status apache2	
+	$ hostname –I
+	http://IP_Address of system -----http://192.168.72.134
+Replace the 192.168.72.134 by the IP address of your machine. 
+ Or
+http://localhost/
+
+
+Procedure
+Procedure: To create new web pages(.html) for project and perform execution using Apache web server
+
+Find file: goto Other location-computer-varwww>html-index.html- check content of file
+2)open browsertype http://localhost/index.html
+3)check output
+
+a)To create new file:
+1)	Open terminal
+2)	 cd  /var/www/html
+3)	 ls
+4)	sudo nano hello.html
+5)	type content   <h1>Hello Eveyone</h1>
+6)	press Ctrl+o - Enter and Ctrl+x
+7)	cat hello.html
+8)	Run your WebPage:
+9)	http://localhost//hello.html
+10)	See the output
+
+Allows Permissions for creating files and folders:
+Change the directory ownership to current user: 1)(create folder)
+$ sudo chown -R $USER:$USER /var/www//html
+Now Create project folder inside html folder  (location: var/www//html)
+Check it’s execution by: http://localhost/project/
+
+2)(create files)
+ touch ~/Templates/Untitled\Document
+Now Create hello.html file inside html folder
